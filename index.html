@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <title>Thirukkural</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <img
+        class="thiru"
+        src="https://cdn.siruvarmalar.com/wp-content/uploads/thirukural-cover.jpg"
+        alt="thirukural img"
+      />
+    </div>
+    <div class="txt">
+      <p>
+        <strong>
+          The Tirukkural, or shortly the Kural, is a classic Tamil language text
+          consisting of 1,330 short couplets, or kurals, of seven words each.
+
+          <br />
+          The text is divided into three books with aphoristic teachings on
+          virtue, wealth and love, respectively.</strong
+        >
+      </p>
+    </div>
+
+    <div class="flex-container">
+      <div class="form-group" id="sub1">
+        <label for="inp">Enter a number</label>
+        <br /><br />
+        <input type="number" id="inp" class="form-control" /><br />
+        <button onclick="getdata()" class="form-control" id="button">
+          Click here for explaination</button
+        ><br />
+
+        <label for="ktamil">Kural in Tamil</label><br /><br />
+        <textarea
+          name="kta"
+          id="ktamil"
+          class="form-control"
+          disabled
+        ></textarea
+        ><br />
+
+        <label for="kenglish">Kural in English</label><br />
+        <textarea
+          name="keh"
+          id="kenglish"
+          class="form-control"
+          disabled
+        ></textarea>
+      </div>
+
+      <div class="form-group" id="sub2">
+        <label for="st">Section name in Tamil</label>
+        <textarea name="snt" id="st" class="form-control" disabled></textarea
+        ><br />
+
+        <label for="cgt">Chapter group in Tamil</label>
+        <textarea name="cgit" id="cgt" class="form-control" disabled></textarea
+        ><br />
+
+        <label for="cnt">Chapter name in Tamil</label>
+        <textarea name="cnit" id="cnt" class="form-control" disabled></textarea
+        ><br />
+
+        <label for="eit">Explaination in Tamil</label>
+        <textarea name="et" id="eit" class="form-control" disabled></textarea>
+      </div>
+
+      <div class="form-group" id="sub3">
+        <label for="se">Section name in Engliah</label>
+        <textarea name="snt" id="se" class="form-control" disabled></textarea
+        ><br />
+
+        <label for="cge">Chapter group in English</label>
+        <textarea name="cgit" id="cge" class="form-control" disabled></textarea
+        ><br />
+
+        <label for="cne">Chapter name in English</label>
+        <textarea name="cnit" id="cne" class="form-control" disabled></textarea
+        ><br />
+
+        <label for="eie">Explaination in English</label>
+        <textarea name="et" id="eie" class="form-control" disabled></textarea>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
